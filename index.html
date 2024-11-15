@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="images/website-icon.png">
+    <title>Hubert Dąbek - About me</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-white.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="navigation-home">Home</a></li>
+                    <li><a href="#about" class="navigation-about">About</a></li>
+                    <li><a href="#services" class="navigation-services">Services</a></li>
+                    <li><a href="#portfolio" class="navigation-portfolio">Portfolio</a></li>
+                    <li><a href="#weather" class="navigation-services">Weather</a></li>
+                    <li><a href="#contact" class="navigation-contact">Contact</a></li>
+                    <li><a href="hire-me.html" class="btn-hire-me">Hire me</a></li>
+                   <a href="index.html"><img src="images/usa.png" alt="" class="usa"></a>
+                    <a href="index-pl.html"><img src="images/pl.png" alt="" class="poland"></a>
+                    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav> 
+            <div class="header-text" >
+                <p class="title">IT web programer student</p>
+                <h1 class="welcome-text">Hi, I'm <span>Hubert</span> Dąbek,<Br> It's nice to see you here.</h1>
+                    <h4>(not the best graphic designer)</h4>
+            </div>
+        </div>
+    </div>
+<!-- -------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" class="hover-image">
+                    <h5 id="hover-image">not a graphic designer</h5>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me-description">
+                        Since my youngest age, I have been interested in IT and always knew that it was the field I wanted to pursue in the future. In a time when the internet was not yet available in my hometown, I played around with computer files to gain basic knowledge of operating systems. As I grew older, I continued to develop my skills and learned how to program basic <span>HTML</span> websites with a little bit of <span>CSS</span>.
+My interest in programming led me to enroll in an IT profile in high school, where I gained knowledge of programming languages such as <span>C++</span> , <span>PHP</span>, <span>JavaScript</span>, and <span>Java</span>. After completing high school, I enrolled in college where I am currently pursuing an IT science degree with a specialization in <span>Internet and Mobile Technology</span>. I am currently on my fourth year of studies.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links exp" id="tab-links-exp" onclick="opentab('expierience')">Expirence</p>
+                        <p class="tab-links edu"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desiging Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>Business Application Development</span><br>Building ServiceNow business applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents exp" id="expierience">
+                        <ul>
+                            <li><span>2022</span><br>Building PHP, JS website based on with FusionCharts</li>
+                            <li><span>2023</span><br>Senior ServiceDesk Analyst</li>
+                            <li><span>2024</span><br>Citizen Innovator - ServiceNOW</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents edu" id="education">
+                        <ul>
+                            <li><span>2007-2013</span><br>Szkoła Podstawowa nr2 w Mielcu</li>
+                            <li><span>2013-2016</span><br>Gimnazjum nr 2 w Mielcu</li>
+                            <li><span>2017-2021</span><br>ZST Mielec</li>
+                            <li><span>2021-currently</span><br>University of Information Technology and Management in Rzeszow</li>
+                            <a href="images/HubertDabek-CCNA Nr sem 1 Gr-certificate.pdf"><li><span>2023</span><br>CCNA - see My Cert</li></a>
+                            <a href="images/HubertDabek-Linux Essentials -certificate.pdf"><li><span>2023</span><br>Linux Essentials - see My Cert</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------services ------------------------ -->
+<div id="services">
+<div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div id="containter-1">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>Desinging and Developing Websites</p>
+            <a href="https://www.figma.com/design/ASZJzjzU3ChmTAqHQfZwKn/4wheelsrent?node-id=0-1&t=6kvrQEvpHidZXbiR-1" target="_blank">Learn more</a>
+        </div>
+        <div id="containter-2">
+            <i class="fa-solid fa-computer"></i>
+            <h2>Computer Sience Specialist</h2>
+            <p>Senior HelpDesk Analyst - IT support</p>
+            <p></p>
+            <a id="learn-more-it">Learn more</a>
+        </div>
+        <div id="containter-3">
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Business App Desinger</h2>
+            <p>ServiceNOW Citizen Innovator</p>
+            <a id="learn-more">Learn more</a>
+        </div>
+       
+        <div class="more-window-servicenow" id="more-window-servicenow">
+            <h1 id="title">ServiceNOW Citizen Innovator</h1><br>
+            <h2>As a Citizen Innovator in ServiceNow, I focused on leveraging the platform to streamline processes, enhance productivity, and solve business challenges through low-code/no-code solutions. My role involved identifying areas for automation and improvement within workflows, designing and building applications, and creating dashboards that offered actionable insights. I collaborated with stakeholders to gather requirements, tested solutions to ensure they met business needs, and provided support to ensure smooth adoption. My work empowered teams to work more efficiently and helped drive digital transformation initiatives across the organization.            </h2>
+            <a><i class="fa-solid fa-xmark" onclick="closeServices()"></i></a>
+        </div>
+
+       <div class="more-window-it" id="more-window-it">
+            <h1 id="title">Senior ServiceDesk Analyst</h1><br>
+            <h2> As a Senior Service Desk Analyst, I provided high-level support to end-users, troubleshooting complex technical issues and ensuring swift resolution to minimize downtime. I served as a primary escalation point for challenging incidents, guiding junior team members, and collaborating with other IT teams to solve problems effectively. My responsibilities included managing and prioritizing tickets, analyzing recurring issues to identify areas for improvement, and implementing best practices to enhance service quality. Additionally, I contributed to knowledge base updates, ensuring consistent support resources.           </h2>
+            <a><i class="fa-solid fa-xmark" onclick="closeServicesIT()"></i></a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ----------------------portfolio ---------------------- -->
+<div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="worklist">
+        <div class="work">
+            <img src="images/work-1.png" alt="">
+            <div class="layer">
+                <h3>JavaFX MP3 Player</h3>
+                <p>Desktop Application allowing listening to choosen music in Java and JavaFX</p>
+                <a href="https://github.com/hubertdabek/MP3_Player"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-2.png" alt="">
+            <div class="layer">
+                <h3>Workspace Website</h3>
+                <p>Website based on PHP and JavaScript to keep the timing of machines at Kirchhoff-Automotive.</p>
+                <a href="https://github.com/hubertdabek/ProjektKirchoff"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-3.png" alt="">
+            <div class="layer">
+                <h3>IT Store</h3>
+                <p>Web store website with usage of Firebase. Website contain: Newest Items, quantity, Cart, login session, buy window with descripton and form to upload/sell new item. </p>
+                <a href="https://github.com/hubertdabek2001/Fire-base-It_store"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/hubertdabek2001" class="btn">See more</a>
+</div>
+</div>
+<!--- weather                  -->
+
+<div id="weather">
+    <div class="container">
+    <h1 class="sub-title">Weather</h1>
+        <table class="cities">
+            
+        </table><br>
+        <h1>basic API usage</h1>
+        <h3>out of quota</h3>
+    </div>
+    
+</div>
+
+<!-- ----------------------- contact ----------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title contact">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hubertdabek2001@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>+48 796 245 299</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/hubertxdabek/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/hdabekk/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/hubertdabek2001"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hubert-d%C4%85bek-7a8664322/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="download">
+<a href="images/Hubert Dąbek CV.pdf" download class="btn btn2 download">Download CV</a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Hubert Dąbek. Made with <i class="fa-solid fa-heart"></i> by Hubert Dąbek.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+    
+</body>
+</html>

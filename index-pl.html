@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="images/website-icon.png">
+    <title>Hubert Dąbek - O mnie</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-white.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="navigation-home">Strona Główna</a></li>
+                    <li><a href="#about" class="navigation-about">O mnie</a></li>
+                    <li><a href="#services" class="navigation-services">Usługi</a></li>
+                    <li><a href="#portfolio" class="navigation-portfolio">Portfolio</a></li>
+                    <li><a href="#weather" class="navigation-services">Pogoda</a></li>
+                    <li><a href="#contact" class="navigation-contact">Kontakt</a></li>
+                    <li><a href="hire-me-pl.html" class="btn-hire-me">Zatrudnij mnie</a></li>
+                   <a href="index.html"><img src="images/usa.png" alt="" class="usa"></a>
+                    <a href="index-pl.html"><img src="images/pl.png" alt="" class="poland"></a>
+                    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav> 
+            <div class="header-text" >
+                <p class="title">Student informatyki - programista webowy</p>
+                <h1 class="welcome-text">Cześć, jestem <span>Hubert</span> Dąbek,<Br> Miło Cię tu widzieć.</h1>
+                    <h4>(nie najlepszy grafik)</h4>
+            </div>
+        </div>
+    </div>
+<!-- -------------------o mnie-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" class="hover-image">
+                    <h5 id="hover-image">nie grafik</h5>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">O mnie</h1>
+                    <p class="about-me-description">
+                        Od najmłodszych lat interesowałem się informatyką i zawsze wiedziałem, że to dziedzina, którą chciałbym się zajmować. W czasach, gdy internet nie był jeszcze dostępny w moim rodzinnym mieście, bawiłem się plikami komputerowymi, zdobywając podstawową wiedzę na temat systemów operacyjnych. W miarę dorastania kontynuowałem rozwój moich umiejętności, ucząc się podstaw programowania stron <span>HTML</span> z odrobiną <span>CSS</span>.
+Moje zainteresowanie programowaniem skłoniło mnie do wyboru profilu informatycznego w szkole średniej, gdzie zdobyłem wiedzę z zakresu języków programowania, takich jak <span>C++</span> , <span>PHP</span>, <span>JavaScript</span> i <span>Java</span>. Po ukończeniu szkoły średniej podjąłem studia na kierunku informatycznym, specjalizując się w <span>Technologiach Internetowych i Mobilnych</span>. Obecnie jestem na czwartym roku studiów.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Umiejętności</p>
+                        <p class="tab-links exp" id="tab-links-exp" onclick="opentab('expierience')">Doświadczenie</p>
+                        <p class="tab-links edu"  onclick="opentab('education')">Edukacja</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Projektowanie interfejsów Web/Aplikacji</li>
+                            <li><span>Tworzenie stron internetowych</span><br>Tworzenie aplikacji internetowych</li>
+                            <li><span>Tworzenie aplikacji mobilnych</span><br>Budowanie aplikacji Android/iOS</li>
+                            <li><span>Tworzenie aplikacji biznesowych</span><br>Budowanie aplikacji biznesowych ServiceNow</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents exp" id="expierience">
+                        <ul>
+                            <li><span>2022</span><br>Budowa strony PHP, JS z użyciem FusionCharts</li>
+                            <li><span>2023</span><br>Starszy analityk wsparcia technicznego</li>
+                            <li><span>2024</span><br>Innowator w ServiceNOW</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents edu" id="education">
+                        <ul>
+                            <li><span>2007-2013</span><br>Szkoła Podstawowa nr2 w Mielcu</li>
+                            <li><span>2013-2016</span><br>Gimnazjum nr 2 w Mielcu</li>
+                            <li><span>2017-2021</span><br>ZST Mielec</li>
+                            <li><span>2021-obecnie</span><br>Wyższa Szkoła Informatyki i Zarządzania w Rzeszowie</li>
+                            <a href="images/HubertDabek-CCNA Nr sem 1 Gr-certificate.pdf"><li><span>2023</span><br>CCNA - zobacz certyfikat</li></a>
+                            <a href="images/HubertDabek-Linux Essentials -certificate.pdf"><li><span>2023</span><br>Linux Essentials - zobacz certyfikat</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------usługi ------------------------ -->
+<div id="services">
+<div class="container">
+    <h1 class="sub-title">Moje Usługi</h1>
+    <div class="services-list">
+        <div id="containter-1">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>Projektowanie i tworzenie stron internetowych</p>
+            <a href="https://www.figma.com/design/ASZJzjzU3ChmTAqHQfZwKn/4wheelsrent?node-id=0-1&t=6kvrQEvpHidZXbiR-1" target="_blank">Dowiedz się więcej</a>
+        </div>
+        <div id="containter-2">
+            <i class="fa-solid fa-computer"></i>
+            <h2>Specjalista IT</h2>
+            <p>Starszy Analityk Wsparcia - Pomoc IT</p>
+            <a id="learn-more-it">Dowiedz się więcej</a>
+        </div>
+        <div id="containter-3">
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Projektant aplikacji biznesowych</h2>
+            <p>Innowator w ServiceNOW</p>
+            <a id="learn-more">Dowiedz się więcej</a>
+        </div>
+       
+        <div class="more-window-servicenow" id="more-window-servicenow">
+            <h1 id="title">Innowator w ServiceNOW</h1><br>
+            <h2>Jako Innowator w ServiceNow, koncentrowałem się na optymalizacji procesów, zwiększaniu produktywności oraz rozwiązywaniu wyzwań biznesowych poprzez rozwiązania typu low-code/no-code. Moje zadania obejmowały identyfikację obszarów do automatyzacji, projektowanie i budowanie aplikacji oraz tworzenie dashboardów z użytecznymi informacjami. Współpracowałem z interesariuszami, aby zebrać wymagania, testować rozwiązania oraz wspierać ich wdrażanie, co przyczyniało się do poprawy efektywności operacyjnej organizacji.</h2><br>
+            <a class="exit-button">Zamknij okno</a>
+        </div>
+</div>
+</div>
+<!-- ----------------------portfolio ---------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Moje Prace</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>JavaFX MP3 Player</h3>
+                    <p>Aplikacja desktopowa umożliwiająca słuchanie wybranej muzyki, napisana w Java i JavaFX</p>
+                    <a href="https://github.com/hubertdabek/MP3_Player"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Strona Workspace</h3>
+                    <p>Strona oparta na PHP i JavaScript, służąca do monitorowania czasu pracy maszyn w Kirchhoff-Automotive.</p>
+                    <a href="https://github.com/hubertdabek/ProjektKirchoff"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Sklep IT</h3>
+                    <p>Strona internetowa sklepu wykorzystująca Firebase. Zawiera: nowe produkty, stan magazynowy, koszyk, sesję logowania, okno zakupu z opisem oraz formularz do dodania/sprzedaży nowego produktu.</p>
+                    <a href="https://github.com/hubertdabek2001/Fire-base-It_store"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/hubertdabek2001" class="btn">Zobacz więcej</a>
+    </div>
+</div>
+
+<!--- Pogoda -->
+<div id="weather">
+    <div class="container">
+        <h1 class="sub-title">Pogoda</h1>
+        <table class="cities">
+            <!-- Treść tabeli pogodowej wypełniana przez API -->
+        </table><br>
+        <h1>Podstawowe użycie API</h1>
+        <h3>Limit wykorzystany</h3>
+    </div>
+</div>
+
+<!-- ----------------------- kontakt ----------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title contact">Skontaktuj się ze mną</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hubertdabek2001@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>+48 796 245 299</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/hubertxdabek/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/hdabekk/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/hubertdabek2001"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hubert-d%C4%85bek-7a8664322/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="download">
+                    <a href="images/Hubert Dąbek CV.pdf" download class="btn btn2 download">Pobierz CV</a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Twoje Imię" required>
+                    <input type="email" name="Email" placeholder="Twój Email" required>
+                    <textarea name="Message" rows="6" placeholder="Twoja Wiadomość"></textarea>
+                    <button type="submit" class="btn btn2">Wyślij</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Hubert Dąbek. Stworzone z <i class="fa-solid fa-heart"></i> przez Huberta Dąbka.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
