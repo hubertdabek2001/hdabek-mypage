@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strona Serwisu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="Website Icons/WulKar_logo_no_text.png">
+</head>
+<body>
+
+  <!-- Sekcja hero -->
+  <section class="hero">
+    <div id="logo">
+        <img src="WulKar_logo_outlined.png" alt="">
+    </div>
+    
+   
+    <button class="open-modal" id="btn-top" data-modal="modal3">Skontaktuj się z nami już teraz!</button>
+
+    <div class="modal-overlay" id="modal3">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>KONTAKT</h2>
+    <p>Email: biuro@wulkar.pl</p>
+    <p>Telefon kontaktowy: +48 691 487 759</p>
+    <p>Adres: Wola Chorzelowska 74a, 39-333 Sarnów, podkarpackie</p>
+  </div>
+</div>
+    
+
+  </section>
+  <div class="hero-bottom">
+<div class="hero-text">
+      <h1>Mobilny i Stacjonarny serwis samochodowy Mielec</h1>
+      <p>
+        Usługi wulkanizacyjne Mielec
+        Zadzwoń już teraz! Pomożemy w tri miga!</p>
+        <button class="btn-primary" onclick="locationOpen()">Sprawdź dojazd!
+    </button>
+    </div>
+ <div class="hero-image">
+      <img src="background-header2.png" alt="Sportowy samochód" />
+      <div class="tag top-left"><i class="fa-solid fa-circle-check"></i> <b>500+ naprawionych samochdów</b></div>
+      <div class="tag bottom-right"><i class="fa-solid fa-circle-check"></i> <B>250 tyś przjechanych kilometrów</B></div>
+    </div>
+
+  </div>
+  
+
+
+
+<div id="services">
+  <div class="container">
+    <div class="services-list">
+      
+      <!-- KARTA 1 -->
+      <div id="container-1" data-modal="modal1" class="open-modal">
+        <i class="fa-solid fa-wrench"></i>
+        <h2>Stacjonarny serwis</h2>
+        <p>Sprawdź usługi, które wykonujemy od ręki!</p>
+      </div>
+      
+      <!-- KARTA 2 -->
+      <div id="container-2" data-modal="modal2" class="open-modal">
+        <i class="fa-solid fa-car-side"></i>
+        <h2>Mobilny serwis</h2>
+        <p>Sprawdź nasze usługi, które wykonamy we wskazanym miejscu</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 1 -->
+<div class="modal-overlay" id="modal1">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    
+    <h1>🛠️ Stacjonarny Serwis Samochodowy – Profesjonalna Obsługa w Naszym Warsztacie 🚗</h1>
+
+<p>
+Szukasz rzetelnego warsztatu, któremu możesz zaufać?<br>
+Twój samochód wymaga przeglądu, naprawy lub gruntownego serwisu?<br>
+Zapraszamy do naszego w pełni wyposażonego stacjonarnego serwisu, gdzie każdy pojazd traktujemy z należytą starannością i profesjonalizmem.
+</p>
+
+<h2>🔧 Kompleksowe usługi serwisowe w jednym miejscu</h2>
+<p>
+Dysponujemy nowoczesnym zapleczem technicznym oraz zespołem doświadczonych mechaników, dzięki czemu jesteśmy w stanie obsłużyć zarówno samochody osobowe, jak i dostawcze.<br>
+Naszym celem jest szybka i skuteczna naprawa, abyś mógł jak najszybciej wrócić na drogę – bez kompromisów w jakości.
+</p>
+
+<h2>✅ Zakres usług stacjonarnych:</h2>
+
+<h3>⚙️ Diagnostyka komputerowa i mechaniczna</h3>
+<ul>
+  <li>Pełna diagnostyka sterowników i elektroniki pojazdowej</li>
+  <li>Testy układów ABS, ESP, poduszek powietrznych, klimatyzacji</li>
+  <li>Wykrywanie i usuwanie błędów silnika oraz innych systemów</li>
+</ul>
+
+<h3>🛞 Serwis mechaniczny</h3>
+<ul>
+  <li>Wymiana sprzęgieł, skrzyń biegów, przegubów i półosi</li>
+  <li>Naprawa układu kierowniczego i zawieszenia</li>
+  <li>Regeneracja turbosprężarek i podzespołów silnika</li>
+  <li>Remonty silników i głowic</li>
+</ul>
+
+<h3>🔋 Elektryka i elektronika pojazdowa</h3>
+<ul>
+  <li>Wymiana alternatorów, rozruszników, akumulatorów</li>
+  <li>Naprawa instalacji elektrycznych i sterowników</li>
+  <li>Montaż dodatkowych systemów (czujniki parkowania, kamery, alarmy)</li>
+</ul>
+
+<h3>🚗 Serwis układów hamulcowych i zawieszenia</h3>
+<ul>
+  <li>Wymiana klocków, tarcz, zacisków, cylinderków</li>
+  <li>Regeneracja zacisków hamulcowych</li>
+  <li>Geometria i ustawienie zbieżności kół</li>
+</ul>
+
+<h3>🧊 Układ chłodzenia i klimatyzacja</h3>
+<ul>
+  <li>Wymiana chłodnic, termostatów, pomp wody</li>
+  <li>Serwis klimatyzacji – napełnianie, odgrzybianie, naprawy</li>
+  <li>Sprawdzanie szczelności i czyszczenie układu</li>
+</ul>
+
+<h3>🛢️ Obsługa eksploatacyjna</h3>
+<ul>
+  <li>Wymiana oleju i filtrów (oleju, powietrza, kabiny, paliwa)</li>
+  <li>Przeglądy okresowe i przygotowanie do przeglądu technicznego</li>
+  <li>Kontrola stanu technicznego pojazdu i wycena napraw</li>
+</ul>
+
+<h3>🧰 Dodatkowe usługi</h3>
+<ul>
+  <li>Wulkanizacja – naprawa i wymiana opon</li>
+  <li>Serwis ogumienia (wyważanie, sezonowa wymiana)</li>
+  <li>Mycie silnika, ozonowanie wnętrza</li>
+  <li>Montaż akcesoriów – bagażniki, haki, rejestratory jazdy</li>
+</ul>
+
+<h2>🏭 Nasz warsztat – nowoczesność i komfort</h2>
+<ul>
+  <li>4 w pełni wyposażone stanowiska serwisowe</li>
+  <li>Profesjonalne podnośniki, narzędzia i urządzenia diagnostyczne</li>
+  <li>Poczekalnia z Wi-Fi, kawą i dostępem do informacji o postępie naprawy</li>
+  <li>Bezpieczny parking i dogodny dojazd</li>
+</ul>
+
+<h2>💡 Dlaczego warto wybrać nasz serwis?</h2>
+<ul>
+  <li>👨‍🔧 Doświadczeni mechanicy z pasją do motoryzacji</li>
+  <li>🛠️ Nowoczesne zaplecze techniczne</li>
+  <li>📆 Terminowa realizacja usług i uczciwe wyceny</li>
+  <li>👍 Gwarancja na wykonane naprawy</li>
+</ul>
+
+<p>
+Umów się na wizytę już dziś – zadbaj o swój pojazd w sprawdzonym miejscu!<br>
+<strong>Stacjonarny Serwis Samochodowy – Twój zaufany warsztat.</strong><br>
+Zadzwoń do nas lub wypełnij formularz kontaktowy – jesteśmy do Twojej dyspozycji!
+</p>
+
+  </div>
+</div>
+
+<!-- MODAL 2 -->
+<div class="modal-overlay" id="modal2">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    
+    <h1>🚗 Mobilna Mechanika Pojazdowa – Szybka i Skuteczna Pomoc na Drodze! 🚛</h1>
+
+<p>
+Awaria w trasie? Silnik odmówił posłuszeństwa tuż przed ważnym spotkaniem?<br>
+A może Twój pojazd nie chce ruszyć spod domu?<br>
+Nie martw się – <strong>dojedziemy do Ciebie i naprawimy Twój samochód na miejscu</strong>, bez konieczności holowania do warsztatu.
+</p>
+
+<h2>🛠️ Nasza mobilna mechanika to:</h2>
+<p>
+<strong>Profesjonalna pomoc techniczna dla samochodów osobowych, dostawczych i ciężarowych</strong>, realizowana szybko, sprawnie i dokładnie.<br>
+Dzięki wieloletniemu doświadczeniu i nowoczesnemu sprzętowi jesteśmy w stanie skutecznie zdiagnozować i usunąć większość usterek na miejscu – oszczędzając Twój czas, pieniądze i nerwy.
+</p>
+
+<h2>🔧 Zakres naszych usług – co naprawiamy na miejscu?</h2>
+
+<h3>✅ Elektryka i elektronika samochodowa</h3>
+<ul>
+  <li>Diagnostyka komputerowa usterek</li>
+  <li>Wymiana akumulatorów, alternatorów, rozruszników</li>
+  <li>Naprawa instalacji elektrycznej (kable, bezpieczniki, przekaźniki)</li>
+  <li>Usuwanie problemów z oświetleniem, centralnym zamkiem i elektrycznymi szybami</li>
+</ul>
+
+<h3>✅ Układy hydrauliczne i pneumatyczne</h3>
+<ul>
+  <li>Diagnoza i naprawa nieszczelności</li>
+  <li>Wymiana przewodów, siłowników, pomp</li>
+  <li>Obsługa układów hamulcowych i wspomagania kierownicy</li>
+</ul>
+
+<h3>✅ Układ hamulcowy i zawieszenie</h3>
+<ul>
+  <li>Wymiana klocków, tarcz, szczęk i bębnów</li>
+  <li>Sprawdzenie i regeneracja amortyzatorów, sprężyn, wahaczy</li>
+  <li>Naprawa układów ABS i ESP</li>
+</ul>
+
+<h3>✅ Układ paliwowy i chłodzenia</h3>
+<ul>
+  <li>Diagnoza problemów z dopływem paliwa</li>
+  <li>Naprawa i czyszczenie wtryskiwaczy</li>
+  <li>Wymiana chłodnicy, termostatu, płynów chłodzących</li>
+</ul>
+
+<h3>✅ Obsługa bieżąca i serwis eksploatacyjny</h3>
+<ul>
+  <li>Wymiana filtrów (oleju, powietrza, paliwa, kabinowych)</li>
+  <li>Wymiana oleju silnikowego i innych płynów eksploatacyjnych</li>
+  <li>Wymiana pasków klinowych i rozrządu (w wybranych przypadkach)</li>
+  <li>Kontrola i regulacja podstawowych parametrów pracy silnika</li>
+</ul>
+
+<h3>✅ Pomoc w nagłych przypadkach</h3>
+<ul>
+  <li>Uruchamianie pojazdu z rozładowanym akumulatorem</li>
+  <li>Pomoc przy zatrzaśniętych kluczykach (bez uszkodzeń)</li>
+  <li>Diagnostyka w trasie – ustalenie przyczyny awarii i decyzja o naprawie lub dalszym holowaniu</li>
+</ul>
+
+<h2>🔧 Nasze zaplecze techniczne</h2>
+<p>Dzięki zaawansowanemu wyposażeniu jesteśmy w stanie świadczyć usługi na najwyższym poziomie, niezależnie od miejsca zdarzenia:</p>
+<ul>
+  <li>✅ <strong>Agregat prądotwórczy</strong> – zapewnia dostęp do zasilania nawet w terenie</li>
+  <li>✅ <strong>Kompresor</strong> – do obsługi układów pneumatycznych oraz zasilania narzędzi</li>
+  <li>✅ <strong>Podnośniki mobilne do 40 ton</strong> – umożliwiają pracę przy samochodach ciężarowych i dostawczych</li>
+  <li>✅ <strong>Profesjonalne narzędzia diagnostyczne i serwisowe</strong> – pozwalają szybko zidentyfikować problem i podjąć skuteczne działania</li>
+</ul>
+
+<h2>💡 Dlaczego warto wybrać nas?</h2>
+<ul>
+  <li>🕒 <strong>Oszczędzasz czas</strong> – nie musisz szukać warsztatu ani organizować transportu</li>
+  <li>💰 <strong>Oszczędzasz pieniądze</strong> – unikniesz kosztów holowania i długich przestojów</li>
+  <li>📍 <strong>Dojeżdżamy wszędzie</strong> – obsługujemy zarówno centra miast, jak i drogi ekspresowe, parkingi, place budowy</li>
+  <li>👨‍🔧 <strong>Doświadczenie i rzetelność</strong> – setki napraw dziennie, zadowoleni klienci i sprawdzone procedury</li>
+</ul>
+
+<p>
+Zadzwoń do nas już teraz lub skorzystaj z formularza kontaktowego.<br>
+Niezależnie od tego, gdzie się znajdujesz – <strong>przyjedziemy, zdiagnozujemy i naprawimy Twój pojazd na miejscu</strong>.<br>
+<strong>Mobilna Mechanika Pojazdowa – tam, gdzie nas potrzebujesz.</strong>
+</p>
+
+  </div>
+</div>
+
+  <!-- Pasek kontaktowy -->
+  <section class="contact-bar">
+    <p>+48 691 487 759    </p>
+    <p>Wola Chorzelowska 74a. 39-333 Sarnów</p>
+    <button class="btn-contact" onclick="callNow()">Zadzwoń do nas</button>
+  </section>
+
+
+  <!-- Sekcja usług / cech -->
+  <div id="ourwork">
+  <div class="container">
+    <h1 class="sub-title">Czym się zajmujemy</h1>
+    <div class="worklist">
+
+      <div class="work">
+        <h3 class="title">Klimatyzacja</h3>
+        <img src="Portrait/air-condition.jpg" alt="">
+        <div class="layer">
+          <h3>Klimatyzacja</h3>
+          <p>Serwis klimatyzacji – napełnianie, odgrzybianie i diagnostyka dla pełnej sprawności układu i komfortu jazdy.</p>
+          <a class="open-modal" data-modal="modal4"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <h3 class="title">Wulkanizacja</h3>
+        <img src="Portrait/vulcanization.jpg" alt="">
+        <div class="layer">
+          <h3>Wulkanizacja</h3>
+          <p>Naprawa i wymiana opon – szybka i solidna obsługa, wyważanie kół oraz sezonowa wymiana ogumienia.</p>
+          <a class="open-modal" data-modal="modal5"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <h3 class="title">Mobilny serwis opon ciężarowych</h3>
+        <img src="Portrait/truck.jpg" alt="">
+        <div class="layer">
+          <h3>Mobilny serwis opon ciężarowych</h3>
+          <p>Mobilny serwis opon dla ciężarówek – szybka pomoc na drodze 24/7, wymiana i naprawa opon w miejscu.</p>
+          <a class="open-modal" data-modal="modal6"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <h3 class="title">Pranie tapicerek</h3>
+        <img src="Portrait/cleaner.jpg" alt="">
+        <div class="layer">
+          <h3>Pranie tapicerek</h3>
+          <p>Profesjonalne pranie tapicerki samochodowej – skutecznie usuwamy zabrudzenia, plamy i nieprzyjemne zapachy.</p>
+          <a class="open-modal" data-modal="modal7"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODALE -->
+<div class="modal-overlay" id="modal4">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Klimatyzacja</h2>
+    <h2>❄️ Serwis Klimatyzacji Samochodowej – Osobowe i Dostawcze</h2>
+
+<p>
+Twoja klimatyzacja nie działa jak powinna? Zadbaj o komfort jazdy i skorzystaj z naszej kompleksowej usługi serwisowej układów klimatyzacji w pojazdach osobowych i dostawczych.<br>
+Obsługujemy systemy oparte na czynniku chłodniczym <strong>R134a</strong> – stacjonarnie oraz mobilnie!
+</p>
+
+<h3>🔧 Co obejmuje nasz serwis klimatyzacji?</h3>
+<ul>
+  <li>✔ <strong>Opróżnienie układu</strong> z czynnika chłodniczego</li>
+  <li>✔ <strong>Oczyszczanie czynnika i osuszanie układu</strong> z wody</li>
+  <li>✔ <strong>Próby szczelności</strong> – ciśnieniowe i podciśnieniowe testy</li>
+  <li>✔ <strong>Napełnianie klimatyzacji</strong> – nowy czynnik, olej oraz barwnik UV</li>
+  <li>✔ <strong>Ozonowanie i odgrzybianie</strong> układu wentylacyjnego</li>
+  <li>✔ <strong>Sprawdzenie ciśnienia</strong> pracy układu klimatyzacji</li>
+  <li>✔ <strong>Diagnostyka komputerowa</strong> – w przypadku problemów ze sterowaniem</li>
+</ul>
+
+<h3>🌬 Jak działa klimatyzacja samochodowa?</h3>
+<p>
+Układ klimatyzacji z zaworem rozprężnym składa się z pięciu głównych elementów:
+<strong>sprężarki</strong>, <strong>skraplacza</strong>, <strong>filtra osuszacza</strong>, <strong>parownika</strong> i <strong>zaworu rozprężnego</strong>, połączonych przewodami.<br><br>
+
+Działanie klimatyzacji polega na cyrkulacji czynnika chłodniczego i oleju sprężarkowego. Sprężarka spręża gaz, który w wysokim ciśnieniu trafia do skraplacza – tam zamienia się w ciecz, oddając ciepło do otoczenia. Następnie ciecz trafia do zaworu rozprężnego, gdzie obniżane jest ciśnienie i czynnik trafia do parownika. Tam odparowuje, odbierając ciepło z powietrza kabiny, co daje efekt chłodzenia.<br><br>
+
+Proces ten powtarza się w cyklu zamkniętym, a jego efektywność zależy od odpowiedniej ilości czynnika chłodniczego i szczelności całego układu.
+</p>
+
+<h3>📌 Gdzie znajduje się skraplacz i jak działa?</h3>
+<p>
+<strong>Skraplacz</strong> (czyli chłodnica klimatyzacji) odpowiada za oddanie ciepła z czynnika chłodniczego do atmosfery. Jest umieszczony z przodu pojazdu – najczęściej przed chłodnicą silnika. Strumień powietrza, wytwarzany przez wentylatory lub jazdę, chłodzi skraplacz i powoduje kondensację gazu w ciecz.<br>
+To niezbędny element zapewniający prawidłowe działanie klimatyzacji, dlatego jego sprawność ma kluczowe znaczenie.
+</p>
+
+<h3>📞 Umów serwis już dziś!</h3>
+<p>
+Skontaktuj się z nami i zadbaj o wydajną, bezpieczną i świeżą klimatyzację w swoim aucie – stacjonarnie lub z dojazdem do Ciebie!<br>
+Z nami zawsze oddychasz czystym, chłodnym powietrzem.
+</p>
+
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal5">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Wulkanizacja</h2>
+    <h2>🚗 Mobilna Wulkanizacja – Samochody Osobowe i Dostawcze</h2>
+
+<p>
+Masz problem z oponami? Nie musisz już jechać do warsztatu – my przyjedziemy do Ciebie!<br>
+Oferujemy kompleksowy mobilny serwis opon, który oszczędza Twój czas i nerwy – bez wychodzenia z domu, biura czy postoju na trasie.
+</p>
+
+<h3>🔧 Co oferujemy?</h3>
+<ul>
+  <li>✔ <strong>Dojazd do Klienta</strong> – Serwis wykonujemy na miejscu: u Ciebie w domu, w pracy lub na drodze.</li>
+  <li>✔ <strong>Sprzedaż opon</strong> – Nowe i używane opony do samochodów osobowych i dostawczych w konkurencyjnych cenach.</li>
+  <li>✔ <strong>Naprawa opon na miejscu</strong> – Szybko usuwamy uszkodzenia, dzięki czemu możesz ruszać w drogę bez zbędnej zwłoki.</li>
+  <li>✔ <strong>Wymiana opon</strong> – Jeśli naprawa nie jest możliwa, wymienimy oponę na nową lub używaną – od ręki.</li>
+  <li>✔ <strong>Nowoczesny sprzęt</strong> – Pracujemy na montażownicach, wyważarkach i podnośnikach klasy warsztatowej.</li>
+  <li>✔ <strong>Felgi stalowe i aluminiowe do 21 cali</strong> – Precyzyjny montaż i obsługa każdego typu felg.</li>
+  <li>✔ <strong>Estetyczne wyważenie</strong> – Stosujemy ciężarki nabijane lub klejone, dopasowane do koloru felg.</li>
+</ul>
+
+<h3>✅ Dlaczego warto skorzystać z naszej mobilnej usługi?</h3>
+<ul>
+  <li>🚀 <strong>Szybkość i wygoda</strong> – Nie tracisz czasu – my przyjeżdżamy tam, gdzie jesteś.</li>
+  <li>🔧 <strong>Profesjonalizm</strong> – Doświadczony personel zapewnia fachową obsługę w każdych warunkach.</li>
+  <li>🔒 <strong>Bezpieczeństwo</strong> – Korzystamy z certyfikowanego sprzętu, by zapewnić jakość i niezawodność usługi.</li>
+</ul>
+
+<h3>📞 Umów się już teraz!</h3>
+<p>
+Zadzwoń i zarezerwuj dogodny termin – jesteśmy gotowi, by pomóc Ci w każdej sytuacji.<br>
+Zaufaj profesjonalistom i ciesz się spokojem na drodze dzięki mobilnej wulkanizacji – szybko, wygodnie i bezpiecznie!
+</p>
+
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal6">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Mobilny serwis opon ciężarowych</h2>
+    <h2>🚛 Mobilna Wulkanizacja – Serwis Opon Ciężarowych, Budowlanych, Rolniczych i Przemysłowych</h2>
+
+<p>
+Awaria opony w trasie? Uszkodzone koło na placu budowy? Nie trać czasu – my do Ciebie przyjedziemy!<br>
+Specjalizujemy się w mobilnej wulkanizacji i naprawie ogumienia dla pojazdów ciężarowych (TIR), maszyn rolniczych, budowlanych oraz przemysłowych.<br>
+Działamy szybko, skutecznie i bez potrzeby transportu do warsztatu.
+</p>
+
+<h3>🔩 Co oferujemy?</h3>
+<ul>
+  <li>✔ <strong>Wymiana i naprawa opon</strong> – bez względu na lokalizację: na drodze, budowie, polu czy hali.</li>
+  <li>✔ <strong>Montaż i demontaż kół</strong> – w pełni mobilnie, bez zbędnych przestojów.</li>
+  <li>✔ <strong>Dynamiczne wyważanie proszkiem</strong> – zapewnia stabilność i wydłuża żywotność ogumienia.</li>
+  <li>✔ <strong>Serwis ogumienia maszyn specjalistycznych</strong> – obsługujemy koparki, ładowarki, traktory, dźwigi i inne pojazdy specjalne.</li>
+  <li>✔ <strong>Diagnostyka i doradztwo</strong> – oceniamy stan techniczny opon i pomagamy dobrać najlepsze rozwiązania.</li>
+</ul>
+
+<h3>🛠 Nowoczesny sprzęt to nasz standard</h3>
+<ul>
+  <li>✅ <strong>Podnośniki hydrauliczne</strong> – bezpieczne i efektywne unoszenie ciężkich pojazdów.</li>
+  <li>✅ <strong>Klucze udarowe i dynamometryczne</strong> – dla precyzyjnego i trwałego montażu kół.</li>
+  <li>✅ <strong>Profesjonalne maszyny wulkanizacyjne</strong> – gotowe do działania w każdych warunkach.</li>
+</ul>
+
+<h3>👍 Dlaczego warto wybrać nas?</h3>
+<ul>
+  <li>🔧 <strong>Błyskawiczny dojazd</strong> – działamy natychmiast po zgłoszeniu.</li>
+  <li>🔧 <strong>Doświadczona kadra</strong> – profesjonaliści z praktyką w terenie.</li>
+  <li>🔧 <strong>Uczciwe ceny</strong> – wysoka jakość usług bez przepłacania.</li>
+</ul>
+
+<h3>📞 Potrzebujesz szybkiej pomocy?</h3>
+<p>
+Zadzwoń do nas – mobilna wulkanizacja dostępna 24/7!<br>
+Działamy tam, gdzie nas potrzebujesz – niezależnie od miejsca i warunków.
+</p>
+
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal7">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Pranie tapicerek</h2>
+    <h2>🫧 Pranie i Odświeżanie Tapicerki Samochodowej</h2>
+
+<p>
+Twoje auto zasługuje na świeżość i czystość, a my wiemy, jak to osiągnąć!<br>
+Oferujemy profesjonalne pranie tapicerki samochodowej – skutecznie usuwamy plamy, kurz, nieprzyjemne zapachy i przywracamy wnętrzu samochodu pierwotny blask.<br>
+Dzięki naszym usługom Twoje auto zyska nie tylko czysty wygląd, ale również komfort jazdy.
+</p>
+
+<h3>✨ Co wyróżnia naszą usługę?</h3>
+<ul>
+  <li>✔ <strong>Zaawansowany sprzęt czyszczący</strong> – korzystamy z profesjonalnych odkurzaczy ekstrakcyjnych, szczotek i urządzeń czyszczących.</li>
+  <li>✔ <strong>Sprawdzone środki czystości</strong> – używamy preparatów dopasowanych do rodzaju tapicerki: tekstylnej, welurowej czy alcantary.</li>
+  <li>✔ <strong>Skuteczne usuwanie zabrudzeń i zapachów</strong> – eliminujemy plamy po napojach, tłuszczu, a także dym papierosowy i inne zapachy.</li>
+  <li>✔ <strong>Bezpieczne dla tkanin</strong> – nasze środki są delikatne dla materiałów, ale bezwzględne dla brudu.</li>
+</ul>
+
+<h3>🧼 Jak przebiega proces czyszczenia?</h3>
+<ol>
+  <li>1️⃣ <strong>Dokładne odkurzanie</strong> – usuwamy kurz i drobne zanieczyszczenia z całego wnętrza auta.</li>
+  <li>2️⃣ <strong>Aplikacja środków czyszczących</strong> – dobieramy odpowiednie preparaty w zależności od typu tapicerki.</li>
+  <li>3️⃣ <strong>Mechaniczne szczotkowanie</strong> – rozbijamy brud i plamy dla maksymalnej skuteczności.</li>
+  <li>4️⃣ <strong>Ekstrakcyjne pranie tapicerki</strong> – dogłębnie wypłukujemy brud i detergenty.</li>
+  <li>5️⃣ <strong>Osuszanie i impregnacja</strong> – tapicerka pozostaje czysta, świeża i zabezpieczona.</li>
+</ol>
+
+<p><strong>Efekt?</strong> Czyste, pachnące i zadbane wnętrze Twojego auta, gotowe na każdą podróż! 🚗</p>
+
+<h3>📅 Umów się już dziś!</h3>
+<p>
+Nie czekaj – przywróć swojemu samochodowi świeżość i komfort.<br>
+Skontaktuj się z nami i umów się na profesjonalne pranie tapicerki!
+</p>
+
+  </div>
+</div>
+
+<div id="about">
+        <div class="container">
+
+          </div>
+            <div class="row">
+              
+              
+                <div class="about-col-1">
+                  <div class="stats-container">
+                    <div class="portraits-container">
+                      <div class="portrait">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Portret 1">
+                      </div>
+                        <div class="portrait">
+                          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Portret 2">
+                        </div>
+                    </div>
+                  </div>
+                  
+                    <div class="stats-container">
+                      <div class="stat">
+                      <div class="stat-title">ROCZNIE NAPRAWIONYCH</div>
+                      <div class="stat-number" id="cars">0</div>
+                      <div class="stat-subtitle">SAMOCHODÓW</div>
+                  </div>
+                      <div class="stat">
+                      <div class="stat-title">ZAUFAŁO NAM</div>
+                      <div class="stat-number" id="clients">0</div>
+                      <div class="stat-subtitle">KLIENTÓW</div>
+                  </div>
+                      <div class="stat">
+                      <div class="stat-title">PRZEJECHANY DYSTANS</div>
+                      <div class="stat-number" id="distance">0</div>
+                      <div class="stat-subtitle">KILOMETRÓW</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">O nas</h1>
+                    <p class="about-me-description">
+                      Jesteśmy dynamicznie rozwijającą się firmą motoryzacyjną, która oferuje szeroki zakres usług mobilnych. Nasza ekipa składa się z doświadczonych mechaników, elektryków, specjalistów wulkanizacji, hydrauliki, pneumatyki oraz klimatyzacji. Dzięki nowoczesnemu sprzętowi i profesjonalnemu podejściu, jesteśmy w stanie szybko i skutecznie zrealizować naprawy na drodze, byś mógł jak najszybciej wrócić do swojej podróży. Działamy na terenie południowo – wschodniej Polski.
+                       </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('vision')">Nasza Wizja</p>
+                        <p class="tab-links exp" id="tab-links-exp" onclick="opentab('mission')">Nasza Misja</p>
+                        <p class="tab-links edu"  onclick="opentab('goals')">Nasze Cele</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="vision">
+                        <p>Naszą wizją jest stać się liderem w branży mobilnych usług motoryzacyjnych, oferując kompleksową pomoc na drodze, która wychodzi naprzeciw wymaganiom współczesnych kierowców. Chcemy być pierwszym wyborem dla każdego, kto potrzebuje szybkiej, niezawodnej naprawy, niezależnie od miejsca i rodzaju pojazdu. Wierzymy, że technologia, doświadczenie i pasja do motoryzacji powinny być fundamentem każdej naprawy</p>
+                    </div>
+                    <div class="tab-contents exp" id="mission">
+                        <p>Naszą misją jest zapewnienie kompleksowej pomocy motoryzacyjnej wszędzie tam, gdzie jej potrzebujesz. Zależy nam na szybkim i skutecznym rozwiązywaniu problemów, które mogą Cię spotkać na drodze. Niezależnie od tego, czy prowadzisz samochód osobowy, dostawczy, ciężarowy, czy budowlany, nasza mobilna obsługa dotrze do Ciebie, aby naprawić wszelkie usterki i umożliwić dalszą jazdę.</p>
+                    </div>
+                    <div class="tab-contents edu" id="goals">
+                        <p>Naszym głównym celem jest zapewnienie najwyższej jakości usług motoryzacyjnych, które umożliwią naszym klientom szybkie i bezproblemowe kontynuowanie podróży. Dążymy do tego, aby każda naprawa, niezależnie od jej rodzaju, była wykonana sprawnie, profesjonalnie i w możliwie najkrótszym czasie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+  </section>
+  <section id="testimonials">
+  <div class="testimonial-slider">
+    
+    <!-- Slajdy -->
+    <div class="testimonial-slide active">
+      <img src="Portrait/profile.png" alt="Klient 1" class="testimonial-avatar">
+      <div class="testimonial-box">
+        <h3>Jan Kowalski</h3>
+        <p>Świetna obsługa! Naprawa wykonana błyskawicznie i profesjonalnie. Polecam każdemu!</p>
+      </div>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="Portrait/profile.png" alt="Klient 2" class="testimonial-avatar">
+      <div class="testimonial-box">
+        <h3>Anna Nowak</h3>
+        <p>Bardzo miła obsługa i rzetelna praca. Przyjechali na miejsce i wszystko naprawili na miejscu!</p>
+      </div>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="Portrait/profile.png" alt="Klient 3" class="testimonial-avatar">
+      <div class="testimonial-box">
+        <h3>Michał Wiśniewski</h3>
+        <p>Serwis godny polecenia – szybka diagnoza, uczciwa wycena i zero problemów!</p>
+      </div>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="Portrait/profile.png" alt="Klient 4" class="testimonial-avatar">
+      <div class="testimonial-box">
+        <h3>Katarzyna Zielińska</h3>
+        <p>Profesjonalna obsługa i bardzo szybka realizacja usługi. Na pewno wrócę ponownie!</p>
+      </div>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="Portrait/profile.png" alt="Klient 5" class="testimonial-avatar">
+      <div class="testimonial-box">
+        <h3>Piotr Lis</h3>
+        <p>Bardzo pozytywne doświadczenie. Fachowo, sprawnie i w rozsądnej cenie.</p>
+      </div>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="Portrait/profile.png" alt="Klient 6" class="testimonial-avatar">
+      <div class="testimonial-box">
+        <h3>Agnieszka Kowal</h3>
+        <p>Obsługa klienta na najwyższym poziomie – szybka reakcja i pomoc w trudnej sytuacji.</p>
+      </div>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="Portrait/profile.png" alt="Klient 7" class="testimonial-avatar">
+      <div class="testimonial-box">
+        <h3>Marcin Duda</h3>
+        <p>Zdecydowanie polecam! Wszystko zostało wykonane zgodnie z umową i na czas.</p>
+      </div>
+    </div>
+
+    <!-- Strzałki -->
+    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+
+    <!-- Kropki -->
+    <div class="dots-container"></div>
+  </div>
+</section>
+
+<section id="total-feedback">
+  <div class="feedback-container">
+    <h2>Twoja opinia</h2>
+    <!-- Gwiazdki oceny -->
+    <div class="stars" id="stars">
+      <span class="star" data-value="1">★</span>
+      <span class="star" data-value="2">★</span>
+      <span class="star" data-value="3">★</span>
+      <span class="star" data-value="4">★</span>
+      <span class="star" data-value="5">★</span>
+    </div>
+    <!-- Pole tekstowe -->
+    <textarea id="feedback" placeholder="Napisz swoją opinię..."></textarea>
+    <button id="feedback-button" onclick="sendFeedback()">Wyślij</button>
+  </div>
+</section>
+
+<footer>
+  <nav>
+    <ul>
+      <li><a href="#logo">Strona Główna</a></li>
+      <li><a href="#services">Usługi</a></li>
+      <li><a href="#ourwork" >Czym się zajmujemy</a></li>
+      <li><a href="#total-feedback" >Opinie</a></li>
+      <li><a href="#btn-top" onclick="scrollAndClick()">Kontakt</a></li>
+    </ul>
+  </nav>
+  <p style="margin: 0;">© 2025 Wykonanie: <strong><a href="https://hdabek.com/">Hubert Dąbek</a></strong>. Wszystkie prawa zastrzeżone.</p>
+</footer>
+
+  <script src="https://kit.fontawesome.com/3d67298544.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
